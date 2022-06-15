@@ -1,0 +1,32 @@
+html {
+  // boilerplate
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  padding-inline-start: 0;
+}

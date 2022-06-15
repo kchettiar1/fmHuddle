@@ -1,0 +1,33 @@
+@use '../utils/' as u;
+@use '../globals/colors' as g;
+
+.header {
+  padding-block-start: u.rem(27);
+  padding-inline: u.rem(16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo img {
+    width: u.rem(104);
+    height: u.rem(16);
+  }
+
+  .button {
+    background-color: g.$white;
+    color: g.$very-dark-cyan;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0954201);
+    width: u.rem(96);
+    height: u.rem(24);
+    font-size: u.rem(10);
+    line-height: u.rem(14);
+
+    .button:hover {
+      color: g.$grayish-blue;
+    }
+  }
+
+  @include u.breakpoint(large) {
+    padding-inline: u.rem(80);
+  }
+}

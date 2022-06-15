@@ -1,0 +1,22 @@
+@use '../globals/colors' as g;
+
+.footer-wrapper {
+  background-color: g.$very-dark-cyan;
+  color: g.$white;
+
+  img {
+    color: hsla(0, 0%, 100%, 1);
+  }
+
+  li a i {
+    width: 32px;
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 50px;
+
+    a {
+      vertical-align: center;
+      text-align: center;
+    }
+  }
+}

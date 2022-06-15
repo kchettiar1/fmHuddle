@@ -1,0 +1,14 @@
+@use '../utils/' as u;
+@use '../globals/_colors' as g;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+h1 {
+  font-family: u.$text-heading;
+  font-weight: 600;
+}
+
+p {
+  font-family: u.$text-body;
+  font-size: u.rem(16)
+}

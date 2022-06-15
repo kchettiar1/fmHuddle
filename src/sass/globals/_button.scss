@@ -1,0 +1,58 @@
+@use '../utils/' as u;
+@use '../globals/_colors' as g;
+
+.button {
+  //   appearance: button;
+  background: g.$btn-primary;
+  color: white;
+  font-family: u.$text-body;
+  font-weight: 700;
+  box-shadow: 2px 3px 6px 1px rgba(255, 82, 193, 0.166185);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+// .button:focus:not(:focus-visible),
+// .button:focus {
+//   outline: 0;
+// }
+
+.button:hover {
+  background-color: g.$btn-hover;
+}
+
+// .button:focus {
+//   background-color: g.$btn-primary;
+//   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+//     rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+// }
+
+// .button:active {
+//   background-color: g.$btn-primary;
+//   background-image: none;
+//   box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+// }
+
+// .button:active:focus {
+//   box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset,
+//     rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+// }
+
+// .button:disabled {
+//   background-image: none;
+//   box-shadow: none;
+//   opacity: 0.65;
+//   pointer-events: none;
+// }
