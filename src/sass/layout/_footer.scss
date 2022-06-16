@@ -4,19 +4,18 @@
   background-color: g.$very-dark-cyan;
   color: g.$white;
 
-  img {
-    color: hsla(0, 0%, 100%, 1);
+  a {
+    color: g.$white;
   }
 
-  li a i {
+  i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 32px;
     height: 32px;
-    border: 1px solid white;
+    border: 1px solid g.$white;
     border-radius: 50px;
-
-    a {
-      vertical-align: center;
-      text-align: center;
-    }
   }
+
 }

@@ -11,12 +11,16 @@
   .nav-hero-wrapper {
     background-color: g.$very-pale-cyan;
     background-image: url(/assets/images/bg-hero-mobile.svg);
-   
 
     @include u.breakpoint(large) {
       background-image: url(/assets/images/bg-hero-desktop.svg);
       padding-block-start: u.rem(45);
       padding-block-end: u.rem(70);
     }
+  }
+
+  .cards-wrapper {
+    margin-block-start: 37px;
+    height: auto;
   }
 }

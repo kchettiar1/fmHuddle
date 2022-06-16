@@ -8,9 +8,18 @@
   justify-content: space-between;
   align-items: center;
 
+  @include u.breakpoint(large) {
+    padding-inline: u.rem(80);
+  }
+
   .logo img {
     width: u.rem(104);
     height: u.rem(16);
+
+    @include u.breakpoint(large) {
+      width: u.rem(200);
+      height: u.rem(31);
+    }
   }
 
   .button {
@@ -21,13 +30,16 @@
     height: u.rem(24);
     font-size: u.rem(10);
     line-height: u.rem(14);
+  
 
-    .button:hover {
-      color: g.$grayish-blue;
+    @include u.breakpoint(large) {
+      width: u.rem(200);
+      height: u.rem(48);
+      font-size: u.rem(14);
+      line-height: u.rem(19);
     }
   }
-
-  @include u.breakpoint(large) {
-    padding-inline: u.rem(80);
+  .button:hover {
+    color: g.$grayish-blue;
   }
 }
