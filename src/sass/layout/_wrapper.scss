@@ -20,7 +20,12 @@
   }
 
   .cards-wrapper {
-    margin-block-start: 37px;
-    height: auto;
+    margin-block-start: u.rem(37);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+
+    justify-items: center;
+    align-items: center;
   }
 }

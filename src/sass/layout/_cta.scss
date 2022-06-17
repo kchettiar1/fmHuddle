@@ -1,0 +1,9 @@
+@use '../utils/' as u;
+@use '../globals/colors' as g;
+
+.cta-wrapper {
+  margin-block-start: u.rem(-129);
+  background: g.$white;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+  border-radius: 15px;
+}
