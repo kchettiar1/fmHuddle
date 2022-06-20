@@ -2,8 +2,58 @@
 @use '../globals/colors' as g;
 
 .cta-wrapper {
-  margin-block-start: u.rem(-129);
-  background: g.$white;
-  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
-  border-radius: 15px;
+  position: absolute;
+  z-index: 999;
+  top: u.rem(2375);
+  left: 3vw;
+  right: 3vw;
+
+  @include u.breakpoint(large) {
+    top: u.rem(2600);
+    left: 32vw;
+    right: 32vw;
+  }
+
+  .cta-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: g.$white;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+    border-radius: 15px;
+    padding-block: u.rem(41);
+    width: u.rem(352);
+    margin: 0 auto;
+
+    @include u.breakpoint(large) {
+      width: u.rem(800);
+      height: u.rem(280);
+    }
+  }
+  h3 {
+    font-size: u.rem(18);
+    line-height: u.rem(30);
+    text-align: center;
+
+    @include u.breakpoint(large) {
+      font-size: u.rem(32);
+      line-height: u.rem(60);
+    }
+  }
+  .button {
+    width: u.rem(200);
+    height: u.rem(40);
+    font-size: u.rem(10);
+    line-height: u.rem(15);
+
+    @include u.breakpoint(large) {
+      width: u.rem(400);
+      height: u.rem(90);
+      font-size: u.rem(20);
+      line-height: u.rem(30);
+      box-shadow: 0px u.rem(6) u.rem(13) rgba(0, 37, 46, 0.223053);
+      border-radius: u.rem(40);
+    }
+  }
 }

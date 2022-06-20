@@ -1,8 +1,15 @@
+@use '../utils/' as u;
 @use '../globals/colors' as g;
 
 .footer-wrapper {
   background-color: g.$very-dark-cyan;
   color: g.$white;
+  z-index: 0;
+  padding-block-start: u.rem(140);
+
+  @include u.breakpoint(large) {
+    padding-block-start: u.rem(190);
+  }
 
   a {
     color: g.$white;

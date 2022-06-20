@@ -27,6 +27,8 @@
 
     @include u.breakpoint(large) {
       grid-column-start: 2;
+      padding-block-start: 0;
+      margin-inline-end: u.rem(16);
     }
   }
 
@@ -34,7 +36,9 @@
     width: u.rem(256);
 
     @include u.breakpoint(large) {
-      width: u.rem(440);
+      width: u.rem(410);
+      height: u.rem(320);
+      margin-block-end: u.rem(16)
     }
   }
 
@@ -59,8 +63,10 @@
     @include u.breakpoint(large) {
       grid-column-start: 1;
       grid-row-start: 1;
-      padding-inline-start: u.rem(120);
-      padding-inline-end: u.rem(168);
+      margin-inline-start: u.rem(120);
+      margin-inline-end: u.rem(168);
+      padding-block: 0;
+      width: u.rem(488);
 
       h2 {
         text-align: left;
@@ -92,7 +98,7 @@
   @include u.breakpoint(large) {
     .card-image-block {
       grid-column-start: 1;
-      padding-inline-start: u.rem(109);
+      margin-inline-start: u.rem(109);
     }
 
     .card-text-block {
