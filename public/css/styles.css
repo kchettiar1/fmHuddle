@@ -341,8 +341,6 @@ p {
 @media (min-width: 56.25em) {
   .cta-wrapper {
     top: 162.5rem;
-    left: 32vw;
-    right: 32vw;
   }
 }
 .cta-wrapper .cta-block {
@@ -394,13 +392,66 @@ p {
 .footer-wrapper {
   background-color: hsl(192deg, 100%, 9%);
   color: hsl(0deg, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
   z-index: 0;
   padding-block-start: 8.75rem;
+  padding-inline-start: 1rem;
 }
 @media (min-width: 56.25em) {
   .footer-wrapper {
     padding-block-start: 11.875rem;
   }
+}
+.footer-wrapper .footer-logo {
+  width: 10.4375rem;
+  height: 1.625rem;
+  margin-block-end: 1.5625rem;
+}
+.footer-wrapper .footer-contact-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-block-end: 1.5rem;
+}
+.footer-wrapper .footer-contact-links img {
+  width: auto;
+  height: 1.5rem;
+  padding-inline-end: 1rem;
+}
+.footer-wrapper .footer-contact-links p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.footer-wrapper .footer-links {
+  margin-block-start: 2.5625rem;
+  font-size: 0.875rem;
+  line-height: 1.6875rem;
+}
+.footer-wrapper .footer-links ul li {
+  padding-block-end: 1rem;
+}
+.footer-wrapper .social-media-links ul {
+  margin-block-start: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-wrapper .social-media-links ul li {
+  padding-inline-start: 0.75rem;
+  height: 2rem;
+  width: auto;
+}
+.footer-wrapper .social-media-links ul li:nth-child(3) {
+  padding-inline-end: 0;
+}
+.footer-wrapper .footer-copyright {
+  margin-block-start: 1.5rem;
+  margin-block-end: 3rem;
+}
+.footer-wrapper .footer-copyright p {
+  font-size: 0.69375rem;
+  line-height: 1.0625rem;
+  text-align: center;
 }
 .footer-wrapper a {
   color: hsl(0deg, 0%, 100%);
