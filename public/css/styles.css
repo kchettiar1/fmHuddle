@@ -242,8 +242,29 @@ p {
   border-radius: 16px;
   margin-block-end: 4.5625rem;
 }
+@media (min-width: 56.25em) {
+  .card {
+    height: 27.5rem;
+    width: 77rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+}
 .card .card-image-block {
   padding-block-start: 1.5rem;
+}
+@media (min-width: 56.25em) {
+  .card .card-image-block {
+    grid-column-start: 2;
+  }
+}
+.card .card-image-block img {
+  width: 16rem;
+}
+@media (min-width: 56.25em) {
+  .card .card-image-block img {
+    width: 27.5rem;
+  }
 }
 .card .card-text-block {
   padding-block-start: 1.5rem;
@@ -260,6 +281,43 @@ p {
   text-align: center;
   color: hsl(208deg, 11%, 55%);
   padding-inline: 2.46875rem;
+}
+@media (min-width: 56.25em) {
+  .card .card-text-block {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding-inline-start: 7.5rem;
+    padding-inline-end: 10.5rem;
+  }
+  .card .card-text-block h2 {
+    text-align: left;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    margin: 0;
+    margin-block-end: 1rem;
+  }
+  .card .card-text-block p {
+    text-align: left;
+    padding-inline: 0;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .card:nth-child(1) {
+    margin-block-start: 10rem;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .card:nth-child(2) .card-image-block {
+    grid-column-start: 1;
+    padding-inline-start: 6.8125rem;
+  }
+  .card:nth-child(2) .card-text-block {
+    grid-column-start: 2;
+  }
 }
 
 .card:nth-child(3) {
